@@ -1,0 +1,41 @@
+package clientname.mods.impl;
+
+import clientname.gui.hud.ScreenPosition;
+import clientname.mods.ModDraggable;
+
+public class ModParticles extends ModDraggable {
+
+	private ScreenPosition pos;
+
+	@Override
+	public int getWidth() {
+		
+		return font.getStringWidth("");
+		
+		
+//Put Text here if wanted Must be same text as font.drawString ↑
+				
+				
+		
+	}
+
+	@Override
+	public int getHeight() {
+		return font.FONT_HEIGHT;
+	}
+
+	@Override
+	public void render(ScreenPosition pos) {
+		font.drawStringWithShadow("", pos.getAbsoluteX() + getWidth() + 3, pos.getAbsoluteY() + 4, -1);
+		
+		//Put Text here if wanted Must be same text as font.drawString ↑
+		
+		this.mc.gameSettings.particleSetting = 0;
+	
+	
+		
+		return;
+		
+	}
+
+}
