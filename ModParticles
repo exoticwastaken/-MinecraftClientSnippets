@@ -30,7 +30,7 @@ public class ModParticles extends ModDraggable {
 		
 		//Put Text here if wanted Must be same text as font.drawString ↑
 		
-		this.mc.gameSettings.particleSetting = 0;
+		this.mc.gameSettings.particleSetting = 10;
 	
 	
 		
