@@ -32,7 +32,7 @@ public class ModHitboxes extends ModDraggable {
 		//Put Text here if wanted Must be same text as font.drawString ↑
 		
 		mc.getRenderManager();
-	this.mc.getRenderManager().setDebugBoundingBox(true);
+	this.mc.getRenderManager().setDebugBoundingBox(isEnabled());
 	
 		
 		return;
